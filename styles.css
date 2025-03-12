@@ -1,0 +1,112 @@
+/* styles.css */
+
+/* Całe tło strony */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to top, #ff0000, #8b0000); /* Czerwony gradient z dołu do góry */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kontener logowania */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Kontener formularza */
+.login-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Przezroczysty czarny z większą ciemnością */
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+/* Nagłówek formularza */
+h1 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Grupa wejściowa dla każdego pola formularza */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Etykieta dla każdego pola */
+.input-group label {
+    font-size: 14px;
+    color: #ddd;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Stylowanie pól wejściowych */
+.input-box {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+/* Kolor ramki przy fokusem */
+.input-box:focus {
+    border-color: #ff0000; /* Czerwony kolor przy fokusem */
+    outline: none;
+}
+
+/* Przycisk logowania */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #ff0000; /* Czerwony przycisk */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Zmiana koloru przycisku po najechaniu */
+button:hover {
+    background-color: #8b0000;
+}
+
+/* Komunikaty o błędach */
+.error-message {
+    color: #f44336;
+    font-size: 14px;
+    margin-top: 15px;
+    display: none; /* Domyślnie niewidoczny */
+}
+
+/* Responsywność */
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
